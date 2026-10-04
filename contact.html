@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Roam</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="travel_recommendation.html">✦ Roam</a>
+    <nav aria-label="Main navigation">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" aria-current="page">Contact Us</a>
+    </nav>
+  </header>
+  <main class="page contact-layout">
+    <div><p class="eyebrow">CONTACT US</p><h1>Let’s talk travel.</h1><p class="lead">Have a destination in mind or a suggestion to share? Leave us a message.</p><p>This demo saves your message in this browser only. It does not send an email.</p></div>
+    <form id="contact-form" class="contact-form">
+      <label for="name">Name</label><input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Your name">
+      <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
+      <label for="message">Message</label><textarea id="message" name="message" rows="6" required maxlength="3000" placeholder="Tell us what’s on your mind"></textarea>
+      <button type="submit">Submit message</button>
+      <p id="contact-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer>✦ Roam · A travel discovery project</footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roam | Travel Recommendations</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="travel_recommendation.html">✦ Roam</a>
+    <nav aria-label="Main navigation">
+      <a href="travel_recommendation.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <form id="search-form" role="search">
+      <label class="sr-only" for="search-input">Search travel recommendations</label>
+      <input id="search-input" type="search" placeholder="Try beach, temple, or country" maxlength="80" aria-describedby="search-help">
+      <button type="submit">Search</button>
+      <button id="reset-button" class="secondary" type="button">Reset</button>
+    </form>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+        <h1>Find your<br>somewhere.</h1>
+        <p>From peaceful beaches to remarkable temples and lively cities, discover a place that speaks to you.</p>
+        <a class="button light" href="#search-input">Start exploring ↗</a>
+      </div>
+      <span class="photo-caption">Lago di Braies · Italy</span>
+    </section>
+    <section class="intro">
+      <p class="eyebrow">A LITTLE INSPIRATION, A WORLD OF POSSIBILITIES</p>
+      <h2>Where will you go next?</h2>
+      <p id="search-help">Search for <strong>beach</strong>, <strong>temple</strong>, or <strong>country</strong>. You can also search for Australia or Japan.</p>
+    </section>
+    <section id="recommendations" aria-labelledby="results-heading" hidden>
+      <h2 id="results-heading">Your recommendations</h2>
+      <p id="search-status" role="status" aria-live="polite"></p>
+      <div id="results" class="results-grid"></div>
+    </section>
+  </main>
+  <footer>✦ Roam · A travel discovery project</footer>
+</body>
+</html>
